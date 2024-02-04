@@ -1,17 +1,65 @@
+// import React, { useState } from "react";
+// import SliderItem from "./SliderItem"; // Import the SliderItem component
+// import shop from "../images/shopifyb.webp";
+// const Slider = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const slides = [
+//     {
+//       subtitle: "Fresh & Organic",
+//       mainImage: {shop},
+//       bgClass: "bg-1",
+//     },
+//     {
+//       subtitle: "Fresh Everyday",
+//       title: "100% Organic Collection",
+//       bgClass: "bg-2",
+//     },
+//   ];
+
+//   const nextSlide = () => {
+//     setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
+//   };
+
+//   const prevSlide = () => {
+//     setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+//   };
+
+//   return (
+//     <div className="homepage-slider">
+//       <SliderItem
+//         subtitle={slides[currentSlide].subtitle}
+//         mainImage={slides[currentSlide].mainImage}
+//         bgClass={slides[currentSlide].bgClass}
+//       />
+//       {/* Connect navigation functions to buttons */}
+//       <div className="slider-navigation">
+//         <button className="prev-button" onClick={prevSlide}>
+//           PREV
+//         </button>
+//         <button className="next-button" onClick={nextSlide}>
+//           NEXT
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Slider;
+
 import React, { useState } from "react";
-import SliderItem from "./SliderItem"; // Import the SliderItem component
+import logo from "../images/shopify.webp";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
       subtitle: "Fresh & Organic",
-      title: "Delicious Seasonal Fruits",
+      mainImage: logo,
       bgClass: "bg-1",
     },
     {
       subtitle: "Fresh Everyday",
-      title: "100% Organic Collection",
+      mainImage: logo, // Add the URL for the second image
       bgClass: "bg-2",
     },
   ];
@@ -26,11 +74,21 @@ const Slider = () => {
 
   return (
     <div className="homepage-slider">
-      <SliderItem
-        subtitle={slides[currentSlide].subtitle}
-        title={slides[currentSlide].title}
-        bgClass={slides[currentSlide].bgClass}
-      />
+      <div className={`single-homepage-slider ${slides[currentSlide].bgClass}`}>
+        <div className="container col-md-12 col-lg-7 offset-lg-1 offset-xl-0">
+            <div className="">
+              <div className="hero-text">
+                {/* <div className="hero-text-tablecell text-center"> */}
+                  <img
+                    src={slides[currentSlide].mainImage}
+                    alt="Main Hero Image"
+                    className="absolute pl-12 pt-12"
+                  />
+                {/* </div> */}
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Connect navigation functions to buttons */}
       <div className="slider-navigation">
         <button className="prev-button" onClick={prevSlide}>

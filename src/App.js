@@ -1,17 +1,25 @@
 import logo from "./logo.svg";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
-import Associates from "./components/Associates.js";
+import NavBar2 from "./components/Navbar2.js";
+import Breadcrumb from "./components/Breadcrumb.js";
+import Footer from "./components/Footer.js";
+import SlideCards from "./components/SlideCards.js";
+import Service from "./components/Service.js";
+import Banner from "./components/Banner.js";
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <>      
+      <NavBar2/>
+      <Banner/>
       <Slider />
-      <Associates />
-      <a className="md:text-xl lg:text-9xl	text-red-600"> ABc</a>
+      <Breadcrumb/>
+      <Service/>
+      <SlideCards/>
+      <Footer/>
+      {/* <a className="md:text-xl lg:text-9xl	text-red-600"> ABc</a>
 
       <a
         href="#"
@@ -24,7 +32,7 @@ function App() {
           Here are the biggest enterprise technology acquisitions of 2021 so
           far, in reverse chronological order.
         </p>
-      </a>
+      </a> */}
     </>
   );
 }
