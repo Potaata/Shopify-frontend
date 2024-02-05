@@ -9,10 +9,10 @@ const Storetasker = () => {
             <p className="text-xs font-semi-bold leading-none text-yellow-500">
               BENEFITS OF STORETASKER
             </p>
-            <h2 className="text-4xl font-thin leading-none tracking-wide text-white">
+            <h2 className="text-4xl font-semibold leading-none tracking-wide text-white">
               Storetasker makes it
             </h2>
-            <h2 className="text-4xl font-thin leading-none tracking-wide text-white">
+            <h2 className="text-4xl font-semibold leading-none tracking-wide text-white">
               fast and easy
             </h2>
           </div>
@@ -37,7 +37,7 @@ const Storetasker = () => {
                 <h2 className="mr-4 pt-4 text-white text-sm font-semibold leading-6 text-slate-900">
                   Easy to Use
                 </h2>
-                <a className="ml-4 mb-8 text-9xl text-gray-500 font-semibold leading-6 opacity-50 ">
+                <a className="ml-5 mb-8 text-9xl text-gray-500 font-semibold leading-6 opacity-50 ">
                   1
                 </a>
               </div>
@@ -67,7 +67,7 @@ const Storetasker = () => {
                 <h2 className="mr-4 pt-4 text-white text-sm font-semibold leading-6 text-slate-900">
                   Affordable Rates
                 </h2>
-                <a className="ml-4 mb-8 text-9xl text-gray-500 font-semibold leading-6 opacity-50 ">
+                <a className="ml-3 mb-8 text-9xl text-gray-500 font-semibold leading-6 opacity-50 ">
                   2
                 </a>
               </div>
@@ -98,7 +98,7 @@ const Storetasker = () => {
                 <h2 className="mr-4 pt-4 text-white text-sm font-semibold leading-6 text-slate-900">
                   Fast Turnaround
                 </h2>
-                <a className="ml-4 mb-8 text-9xl text-gray-500 font-semibold leading-6 opacity-50 ">
+                <a className="mb-8 text-9xl text-gray-500 font-semibold leading-6 opacity-50 ">
                   3
                 </a>
               </div>

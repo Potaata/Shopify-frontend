@@ -1,6 +1,5 @@
-
 import React, { useState } from "react";
-import logo from "../images/logo.png"; // Importing the logo from src/images folder
+import logo from "../images/logo.png"; // Importing the logo from src/images 
 
 const NavBar2 = () => {
   const [isResponsive, setIsResponsive] = useState(false);
@@ -9,8 +8,7 @@ const NavBar2 = () => {
   // Function to toggle the responsive state
   const toggleResponsive = () => {
     setIsResponsive(!isResponsive);
-    return <div>hi</div>
-
+    return;
   };
 
   // Function to handle scroll event
@@ -37,11 +35,11 @@ const NavBar2 = () => {
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className="h-8" alt="Flowbite Logo" />
         </a>
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            onClick={toggleResponsive}
+            onClick={toggleResponsive} // button triggers a function (toggleResponsive) to toggle the responsive state.
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
@@ -65,7 +63,7 @@ const NavBar2 = () => {
           </button>
         </div>
         <div
-          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${ //fixed navbar
             isResponsive ? "block" : "hidden"
           }`}
           id="navbar-sticky"
@@ -91,7 +89,7 @@ const NavBar2 = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#portfolio"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-md font-thin"
                 style={{ fontFamily: "Roboto, sans-serif" }}
               >
@@ -100,7 +98,7 @@ const NavBar2 = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#service"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-md font-thin"
                 style={{ fontFamily: "Roboto, sans-serif" }}
               >
@@ -109,7 +107,7 @@ const NavBar2 = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#blog"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-md font-thin"
                 style={{ fontFamily: "Roboto, sans-serif" }}
               >
@@ -118,7 +116,7 @@ const NavBar2 = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#contact"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-md font-thin"
                 style={{ fontFamily: "Roboto, sans-serif" }}
               >

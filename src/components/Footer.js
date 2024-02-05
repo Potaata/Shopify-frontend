@@ -1,4 +1,6 @@
 import React from "react";
+
+//importing images from src/images
 import footer1 from "../images/footer1.png";
 import footer2 from "../images/footer2.png";
 import visa from "../images/visa.png";
@@ -9,7 +11,7 @@ import shopify from "../images/shopifyfooter.png";
 
 function Footer() {
   return (
-    <footer className="bg-blue-950">
+    <footer className="bg-blue-950" id="contact">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 ">
         <div className="lg:flex lg:items-start lg:gap-8 flex justify-center">
           <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
@@ -28,7 +30,7 @@ function Footer() {
             <div className="space-y-4 md:space-y-0 md:flex md:items-start">
 
               <a
-                className="inline-flex items-center gap-2 bg-white px-8 py-3 text-blue-500 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90 mr-6"
+                className="inline-flex items-center gap-2 bg-white px-8 py-3 text-blue-400 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90 mr-6"
                 href="/"
               >
                 <span className="text-xs font-medium mr-12"> Become an expert </span>
@@ -221,6 +223,7 @@ function Footer() {
           </div>
         </div>
 
+      {/*copyright */}
         <div className="mt-4 pt-8">
           <div className="sm:flex sm:justify-between">
             <p className="text-xs text-gray-300 mb-2 sm:mb-0">

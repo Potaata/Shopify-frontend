@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+//importing images from src/images
 import star from "../images/5star.png";
 import shopify from "../images/shopifyb.webp";
 
@@ -12,7 +13,7 @@ const Banner = () => {
   };
   return (
     <>
-      {isVisible && (
+      {isVisible && ( // renders a banner component conditionally based on the value of isVisible
         <div
           id="marketing-banner"
           tabIndex="-1"
@@ -21,7 +22,7 @@ const Banner = () => {
           <div className="flex flex-col items-start mb-3 me-4 md:items-center md:flex-row md:mb-0">
             <ul className="mt-6 space-y-4 text-sm">
               <button
-                onClick={handleClose}
+                onClick={handleClose} //'handleClose' is true on click, closing the banner 
                 className="absolute top-2 right-2 w-7 h-7 flex items-center justify-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 <svg
@@ -42,11 +43,11 @@ const Banner = () => {
                 <span className="sr-only">Close banner</span>
               </button>
               <li>
-                <img src={star} className="h-4 me-3" alt="FlowBite Logo" />
+                <img src={star} className="h-4 me-3" alt="FlowBite Logo" /> 
               </li>
               <li>
                 <a className="text-gray-500">
-                  <strong>4190 jobs</strong> completed successfully with{" "}
+                  <strong>4190 jobs</strong> completed successfully with
                   <strong>97.4%</strong>5 star reviews
                 </a>
               </li>

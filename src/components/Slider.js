@@ -1,65 +1,20 @@
-// import React, { useState } from "react";
-// import SliderItem from "./SliderItem"; // Import the SliderItem component
-// import shop from "../images/shopifyb.webp";
-// const Slider = () => {
-//   const [currentSlide, setCurrentSlide] = useState(0);
-//   const slides = [
-//     {
-//       subtitle: "Fresh & Organic",
-//       mainImage: {shop},
-//       bgClass: "bg-1",
-//     },
-//     {
-//       subtitle: "Fresh Everyday",
-//       title: "100% Organic Collection",
-//       bgClass: "bg-2",
-//     },
-//   ];
-
-//   const nextSlide = () => {
-//     setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
-//   };
-
-//   const prevSlide = () => {
-//     setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
-//   };
-
-//   return (
-//     <div className="homepage-slider">
-//       <SliderItem
-//         subtitle={slides[currentSlide].subtitle}
-//         mainImage={slides[currentSlide].mainImage}
-//         bgClass={slides[currentSlide].bgClass}
-//       />
-//       {/* Connect navigation functions to buttons */}
-//       <div className="slider-navigation">
-//         <button className="prev-button" onClick={prevSlide}>
-//           PREV
-//         </button>
-//         <button className="next-button" onClick={nextSlide}>
-//           NEXT
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Slider;
-
 import React, { useState } from "react";
+
+//importing images from src/images
 import logo from "../images/shopify.webp";
+import girl from "../images/girl.webp";
 
 const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0); // utilizes state (useState) to manage the current slide 
   const slides = [
     {
-      subtitle: "Fresh & Organic",
+      secondImage: girl,
       mainImage: logo,
       bgClass: "bg-1",
     },
     {
-      subtitle: "Fresh Everyday",
-      mainImage: logo, // Add the URL for the second image
+      secondImage: girl,
+      mainImage: logo,
       bgClass: "bg-2",
     },
   ];
@@ -68,6 +23,8 @@ const Slider = () => {
     setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
   };
 
+  //TnextSlide and prevSlide, handle navigation between slides by updating the currentSlide
+
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
   };
@@ -75,17 +32,75 @@ const Slider = () => {
   return (
     <div className="homepage-slider">
       <div className={`single-homepage-slider ${slides[currentSlide].bgClass}`}>
-      <div className="mx-auto my-10 flex justify-center items-center">
-  <div className="md:w-2/3 lg:w-2/3 xl:w-2/3 flex justify-center items-center">
-      <img
-        src={slides[currentSlide].mainImage}
-        alt="Main Hero Image"
-        className="mx-auto my-auto" 
-      />
-  </div>
-</div>
+        <div className="mt-96 flex justify-center">
+          <div className="d:w-2/3 lg:w-2/3 xl:w-2/3">
+            <div>
+              <img
+                src={slides[currentSlide].mainImage}
+                alt="Main Hero Image"
+                className="mx-auto my-auto"
+                style={{ width: "400px", height: "90px" }} // Adjust the width and height here
+              />
+              <img
+                src={slides[currentSlide].secondImage}
+                alt="Main Hero Image"
+                className="my-auto pt-36"
+                style={{
+                  width: "500px",
+                  height: "300px",
+                  position: "relative",
+                  zIndex: "1",
+                }} // Adjust the width, height, and other styles here
+              />
+              {/* Text in behind the image */}
 
-
+              <div
+                className="absolute inset-0 pt-[46rem] flex justify-center items-center text-white"
+                style={{ zIndex: "0" }}
+              >
+                <div className="text-center">
+                  <h2 className="text-9xl font-bold tracking-widest pr-[18rem]">
+                    L
+                  </h2>
+                </div>
+              </div>
+            </div>
+            {/* Text in front of the image */}
+            <div
+              className="absolute inset-0 pt-[48rem] flex justify-center items-center text-white"
+              style={{ zIndex: "2" }}
+            >
+              <div className="text-center">
+                <h2 className="text-9xl font-bold tracking-widest pr-[8rem]">
+                  A
+                </h2>
+              </div>
+            </div>
+            <div
+              // Text in behind the image 
+ 
+              className="absolute inset-0 pt-[46rem] flex justify-center items-center text-white"
+              style={{ zIndex: "0" }}
+            >
+              <div className="text-center">
+                <h2 className="text-9xl font-bold tracking-widest pl-[2rem]">
+                  S
+                </h2>
+              </div>
+            </div>
+            {/* Text in front of the image */}
+            <div
+              className="absolute inset-0 pt-[46rem] flex justify-center items-center text-white"
+              style={{ zIndex: "0" }}
+            >
+              <div className="text-center">
+                <h2 className="text-9xl font-bold tracking-widest pl-[14rem]">
+                  T
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* Connect navigation functions to buttons */}
       <div className="slider-navigation">

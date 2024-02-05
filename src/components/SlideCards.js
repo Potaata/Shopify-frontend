@@ -1,4 +1,6 @@
 import React from "react";
+
+//importing images from src/images
 import star from "../images/5star.png";
 import card1 from "../images/card1.webp";
 import card2 from "../images/card2.webp";
@@ -9,6 +11,7 @@ import card6 from "../images/card6.webp";
 
 const Button = ({ children, isActive }) => {
   const buttonStyle = {
+    // button's appearance determined by the isActive prop
     borderBottom: isActive ? "2px solid #1C64F2" : "none",
     transition: "border-color 0.3s, color 0.3s",
     margin: "0 10px",
@@ -29,6 +32,7 @@ const Button = ({ children, isActive }) => {
       event.target.style.borderColor = "#4b5563";
     }
   };
+  //handleFocus and handleBlur changes the button's styles, only when it is not active
 
   const handleBlur = (event) => {
     if (!isActive) {
@@ -38,6 +42,7 @@ const Button = ({ children, isActive }) => {
   };
 
   return (
+    //button is rendered with its children and event handlers for focus and blur.
     <button
       type="button"
       style={buttonStyle}
@@ -51,14 +56,14 @@ const Button = ({ children, isActive }) => {
 
 const SlideCards = () => {
   return (
-    <div className="h-full bg-white">
+    <div className="h-full bg-white" id="portfolio">
       <div className=" flex items-center justify-center py-4 md:py-8 flex-wrap">
         <Button>EMAIL</Button>
         <Button>SOCIAL MEDIA</Button>
         <Button>ADVERTISING</Button>
         <Button>CONVERSION</Button>
         <Button>FEATURES</Button>
-        <Button isActive={true}>DESIGN</Button>
+        <Button isActive={true}>DESIGN</Button> {/*buton is currently active*/}
         <Button> GROWTH</Button>
         <Button> SEO</Button>
       </div>
