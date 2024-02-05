@@ -8,6 +8,11 @@ import Footer from "./components/Footer.js";
 import SlideCards from "./components/SlideCards.js";
 import Service from "./components/Service.js";
 import Banner from "./components/Banner.js";
+import Overlap from "./components/Overlap.js";
+import Overlap2 from "./components/Overlap2.js";
+import Phone from "./components/Phone.js";
+import Storetasker from "./components/Storetasker.js";
+import Expert from "./components/Expert.js";
 
 function App() {
   return (
@@ -16,8 +21,11 @@ function App() {
       <Banner/>
       <Slider />
       <Breadcrumb/>
+      <Overlap/>
+      <Expert/>
       <Service/>
       <SlideCards/>
+      <Storetasker/>
       <Footer/>
       {/* <a className="md:text-xl lg:text-9xl	text-red-600"> ABc</a>
 

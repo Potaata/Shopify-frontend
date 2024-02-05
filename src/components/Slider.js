@@ -75,19 +75,17 @@ const Slider = () => {
   return (
     <div className="homepage-slider">
       <div className={`single-homepage-slider ${slides[currentSlide].bgClass}`}>
-        <div className="container col-md-12 col-lg-7 offset-lg-1 offset-xl-0">
-            <div className="">
-              <div className="hero-text">
-                {/* <div className="hero-text-tablecell text-center"> */}
-                  <img
-                    src={slides[currentSlide].mainImage}
-                    alt="Main Hero Image"
-                    className="absolute pl-12 pt-12"
-                  />
-                {/* </div> */}
-            </div>
-          </div>
-        </div>
+      <div className="mx-auto my-10 flex justify-center items-center">
+  <div className="md:w-2/3 lg:w-2/3 xl:w-2/3 flex justify-center items-center">
+      <img
+        src={slides[currentSlide].mainImage}
+        alt="Main Hero Image"
+        className="mx-auto my-auto" 
+      />
+  </div>
+</div>
+
+
       </div>
       {/* Connect navigation functions to buttons */}
       <div className="slider-navigation">
