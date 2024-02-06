@@ -9,7 +9,6 @@ const Banner = () => {
   //The `handleClose` function sets the `isVisible` variable to `false`.
   const handleClose = () => {
     setIsVisible(false);
-
   };
   return (
     <>
@@ -22,7 +21,7 @@ const Banner = () => {
           <div className="flex flex-col items-start mb-3 me-4 md:items-center md:flex-row md:mb-0">
             <ul className="mt-6 space-y-4 text-sm">
               <button
-                onClick={handleClose} //'handleClose' is true on click, closing the banner 
+                onClick={handleClose} //'handleClose' is true on click, closing the banner
                 className="absolute top-2 right-2 w-7 h-7 flex items-center justify-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 <svg
@@ -43,7 +42,7 @@ const Banner = () => {
                 <span className="sr-only">Close banner</span>
               </button>
               <li>
-                <img src={star} className="h-4 me-3" alt="FlowBite Logo" /> 
+                <img src={star} className="h-4 me-3" alt="FlowBite Logo" />
               </li>
               <li>
                 <a className="text-gray-500">

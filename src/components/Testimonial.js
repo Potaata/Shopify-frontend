@@ -9,8 +9,8 @@ import test3 from "../images/test3.png";
 const Testimonial = () => {
   return (
     <div className="h-full bg-white m-6 flex flex-col justify-center items-center">
-      <div className="testimonial flex flex-wrap justify-center gap-6">
-        <div className="flex flex-wrap justify-between rounded-md bg-transparent p-8 max-w-sm mt-16">
+      <div className="flex flex-wrap justify-center gap-6 lg:flex lg:justify-around">
+      <div className="flex flex-wrap justify-between rounded-md bg-transparent p-8 max-w-sm mt-16 lg:mt-0">
           <div>
             <p className="text-xs font-semibold leading-none text-yellow-400">
               WHAT OTHERS ARE SAYING ABOUT STORETASKER

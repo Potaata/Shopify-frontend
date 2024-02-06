@@ -1,4 +1,3 @@
-
 import React from "react";
 
 //importing 'react-slick' for carousel
@@ -14,12 +13,12 @@ import troop from "../images/troop.webp";
 import sb from "../images/outOfSB.webp";
 
 function Breadcrumb() {
-  // array that containing the paths to the images 
+  // array that containing the paths to the images
 
-  const images = [pixel, troop, sb, arch, maes]; 
+  const images = [pixel, troop, sb, arch, maes];
 
   // configuring the behavior and appearance of the carousel slider.
-  
+
   const settings = {
     dots: true,
     infinite: true,
@@ -48,7 +47,6 @@ function Breadcrumb() {
     maxWidth: "100%", // maximum width for the container
     height: "200px",
     overflowX: "hidden", // Hide horizontal overflow
-
   };
 
   const imageSizeStyles = {
@@ -57,7 +55,7 @@ function Breadcrumb() {
   };
 
   return (
-  // Renders a carousel slider using the `react-slick` library. 
+    // Renders a carousel slider using the `react-slick` library.
 
     <div className="clients-slider" style={containerStyle}>
       <Slider {...settings}>

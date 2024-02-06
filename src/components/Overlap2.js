@@ -1,9 +1,9 @@
 import React from "react";
 
 //importing images from src/images
-import img1 from "../images/img1.png";
-import img2 from "../images/img2.png";
-import img3 from "../images/img3.png";
+import img1 from "../images/img1.webp";
+import img2 from "../images/img2.webp";
+import img3 from "../images/img3.webp";
 import profile from "../images/profile.png";
 
 const Overlap2 = () => {
@@ -11,8 +11,8 @@ const Overlap2 = () => {
     <div className="we-help-section">
       <div className="container mx-auto">
         <div className="row justify-content-between">
-          <div className="col-lg-6 mb-5 mb-lg-0">  {/* arrange the content in columns */}
-
+          <div className="col-lg-6 mb-5 mb-lg-0">
+            {/* arrange the content in columns */}
             <div className="imgs-grid ">
               <div className="grid grid-1 pr-5  ">
                 <img
@@ -22,7 +22,7 @@ const Overlap2 = () => {
                   className="w-full sm:w-auto"
                 />
                 <div className="absolute top-20 left-4 right-4 flex flex-col items-center justify-center text-center p-16">
-                  <a className="font-sans text-5xl font-semibold leading-snug tracking-normal text-white block whitespace-normal pb-4 max-w-[80%]">
+                <a className="font-sans text-5xl sm:text-xl md:text-4xl lg:text-5xl font-semibold leading-snug tracking-normal text-white block whitespace-normal pb-4 max-w-[80%]">
                     Chinese Elm Bonsai
                   </a>
                   <button

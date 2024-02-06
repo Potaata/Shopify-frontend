@@ -5,7 +5,7 @@ import logo from "../images/shopify.webp";
 import girl from "../images/girl.webp";
 
 const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0); // utilizes state (useState) to manage the current slide 
+  const [currentSlide, setCurrentSlide] = useState(0); // utilizes state (useState) to manage the current slide
   const slides = [
     {
       secondImage: girl,
@@ -38,13 +38,13 @@ const Slider = () => {
               <img
                 src={slides[currentSlide].mainImage}
                 alt="Main Hero Image"
-                className="mx-auto my-auto"
+                className="mx-auto"
                 style={{ width: "400px", height: "90px" }} // Adjust the width and height here
               />
               <img
                 src={slides[currentSlide].secondImage}
                 alt="Main Hero Image"
-                className="my-auto pt-36"
+                className="pt-36"
                 style={{
                   width: "500px",
                   height: "300px",
@@ -77,8 +77,8 @@ const Slider = () => {
               </div>
             </div>
             <div
-              // Text in behind the image 
- 
+              // Text in behind the image
+
               className="absolute inset-0 pt-[46rem] flex justify-center items-center text-white"
               style={{ zIndex: "0" }}
             >

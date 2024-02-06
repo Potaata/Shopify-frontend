@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../images/logo.png"; // Importing the logo from src/images 
+import logo from "../images/logo.png"; // Importing the logo from src/images
 
 const NavBar2 = () => {
   const [isResponsive, setIsResponsive] = useState(false);
@@ -63,7 +63,8 @@ const NavBar2 = () => {
           </button>
         </div>
         <div
-          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${ //fixed navbar
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
+            //fixed navbar
             isResponsive ? "block" : "hidden"
           }`}
           id="navbar-sticky"

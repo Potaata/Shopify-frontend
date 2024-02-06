@@ -51,7 +51,6 @@
 
 ----------------------------------------------------------------------------- */
 
-
 @media (max-width: 768px) {
   .bg-responsive {
     background-color: #434343;
@@ -97,7 +96,6 @@
 
 ----------------------------------------------------------------------------- */
 .hero-bg {
-  /* background-image: url(../img/hero-bg.jpg); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -334,7 +332,8 @@ body {
 @media (max-width: 768px) {
   .we-help-section .imgs-grid:before {
     width: 200px;
-    height: 250px;  }
+    height: 250px;
+  }
 }
 
 .we-help-section .imgs-grid:after {
@@ -352,12 +351,17 @@ body {
   right: -40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 976px) {
   .we-help-section .imgs-grid:after {
     display: none; /* Hide the element on screens smaller than 768 pixels */
   }
 }
 
+@media (max-width: 768px) {
+  .we-help-section .imgs-grid:after {
+    display: none; /* Hide the element on screens smaller than 768 pixels */
+  }
+}
 
 .we-help-section .imgs-grid .third-image {
   position: absolute;
@@ -377,7 +381,8 @@ body {
 
 @media (max-width: 768px) {
   .we-help-section .imgs-grid .third-image {
-   display: none; }
+    display: none;
+  }
 }
 
 .we-help-section .imgs-grid .grid {
@@ -395,7 +400,6 @@ body {
   -ms-grid-row-span: 30;
   grid-row: 1 / span 30;
 }
-
 
 @media (max-width: 768px) {
   .we-help-section .imgs-grid .grid.grid-1 {
@@ -418,7 +422,6 @@ body {
     grid-row: 1 / span 30;
   }
 }
-
 
 .we-help-section .imgs-grid .grid.grid-2 {
   position: absolute;
@@ -469,11 +472,4 @@ body {
   z-index: -1;
   top: 15rem;
   left: 17rem;
-}
-
-@media (max-width: 640px) { /* Adjust the max-width as needed */
-  .testimonial.flex.flex-wrap.justify-center {
-    flex-direction: column;
-    align-items: center;
-  }
 }

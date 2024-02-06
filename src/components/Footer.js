@@ -27,51 +27,55 @@ function Footer() {
             </div>
 
             <div className="col-span-2 ml-14 pb-10 lg:col-span-3 lg:flex lg:items-end">
-            <div className="space-y-4 md:space-y-0 md:flex md:items-start">
-
-              <a
-                className="inline-flex items-center gap-2 bg-white px-8 py-3 text-blue-400 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90 mr-6"
-                href="/"
-              >
-                <span className="text-xs font-medium mr-12"> Become an expert </span>
-
-                <svg
-                  className="h-5 w-5 rtl:rotate-180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <div className="space-y-4 md:space-y-0 md:flex md:items-start">
+                <a
+                  className="inline-flex items-center gap-2 bg-white px-8 py-3 text-blue-400 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90 mr-6"
+                  href="/"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
-              <a
-                className="inline-flex items-center gap-2 bg-blue-400 px-8 py-3 text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
-                href="/"
-              >
-                <span className="text-xs font-medium mr-12">Get a Free Estimate</span>
+                  <span className="text-xs font-medium mr-12">
+                    {" "}
+                    Become an expert{" "}
+                  </span>
 
-                <svg
-                  className="h-5 w-5 rtl:rotate-180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  <svg
+                    className="h-5 w-5 rtl:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+                <a
+                  className="inline-flex items-center gap-2 bg-blue-400 px-8 py-3 text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
+                  href="/"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
-            </div>
+                  <span className="text-xs font-medium mr-12">
+                    Get a Free Estimate
+                  </span>
+
+                  <svg
+                    className="h-5 w-5 rtl:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
 
             <div className="col-span-2 sm:col-span-1 ">
@@ -223,7 +227,7 @@ function Footer() {
           </div>
         </div>
 
-      {/*copyright */}
+        {/*copyright */}
         <div className="mt-4 pt-8">
           <div className="sm:flex sm:justify-between">
             <p className="text-xs text-gray-300 mb-2 sm:mb-0">
