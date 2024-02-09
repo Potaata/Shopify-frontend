@@ -8,133 +8,73 @@ import test3 from "../images/test3.png";
 
 const Testimonial = () => {
   return (
-    <div className="h-full bg-white m-6 flex flex-col justify-center items-center">
-      <div className="flex flex-wrap justify-center gap-6 lg:flex lg:justify-around">
-      <div className="flex flex-wrap justify-between rounded-md bg-transparent p-8 max-w-sm mt-16 lg:mt-0">
-          <div>
-            <p className="text-xs font-semibold leading-none text-yellow-400">
-              WHAT OTHERS ARE SAYING ABOUT STORETASKER
+    <div className="testimonial-container">
+      <div className="testimonial-wrapper">
+        <div className="testimonial-column">
+          <div className="testimonial-card left no-border">
+            <div className="testimonial-section">
+              <p className="testimonial-heading">
+                WHAT OTHERS ARE SAYING ABOUT STORETASKER
+              </p>
+              <h2 className="testimonial-title">Why Storetasker is</h2>
+              <h2 className="testimonial-title">
+                the <span className="bold-text">#1 Shopify</span>
+              </h2>
+              <h2 className="testimonial-title">
+                <span className="bold-text">outsourcing service</span>
+              </h2>
+            </div>
+          </div>
+
+          <div className="testimonial-card left">
+            <img src={star} width="100" height="100" alt="Rating Star" />
+            <p className="testimonial-text">
+              Storetasker delivered on time, within budget and went above and
+              beyond to make my app a success...
             </p>
-            <h2 className="text-3xl font-normal leading-none tracking-wide text-grey-400">
-              Why Storetasker is
-            </h2>
-            <h2 className="text-3xl font-normal leading-none tracking-wide text-grey-400">
-              the <strong>#1 Shopify</strong>
-            </h2>
-            <h2 className="text-3xl font-bold leading-none tracking-wide text-grey-600">
-              outsourcing service
-            </h2>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap justify-between rounded-md bg-white p-8 shadow-lg max-w-sm mx-auto mt-32">
-          <img src={star} width="100" height="100" />
-          {/* Testimonial */}
-          <p className="my-4 mb-0 text-lg font-normal italic leading-relaxed tracking-wide text-gray-400">
-            Storetasker delivered on time, within budget and went above and
-            beyond to make my app a success...
-          </p>
-
-          {/* Author */}
-          <div className="mt-6 flex items-center gap-6">
-            <div className="h-10 w-10 overflow-hidden rounded-full shadow-sm outline-neutral-800">
-              <div className="relative inline-block overflow-hidden rounded-lg border-neutral-800">
-                <img
-                  alt=""
-                  src={test1}
-                  width="50"
-                  height="50"
-                  decoding="async"
-                  data-nimg="1"
-                  className="inline-block"
-                  loading="lazy"
-                  style={{ color: "transparent" }}
-                />
+            <div className="author-info">
+              <div className="author-avatar">
+                <img src={test3} width="50" height="50" alt="Author Avatar" />
               </div>
-            </div>
-            <div>
-              <p className="leading-none tracking-wide text-gray-400">
-                Natalie Hernandez
-              </p>
-              <p className="text-xs leading-none tracking-wide text-gray-300">
-                CEO @Stockey
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex justify-center gap-6">
-        <div className="flex flex-wrap justify-between rounded-md bg-white p-8 shadow-lg max-w-sm mb-32">
-          <img src={star} width="100" height="100" />
-
-          {/* Testimonial */}
-          <p className="my-4 mb-0 text-lg font-normal italic leading-relaxed tracking-wide text-gray-400">
-            Storetasker delivered on time, within budget and went above and
-            beyond to make my app a success...
-          </p>
-
-          {/* Author */}
-          <div className="mt-6 flex items-center gap-6">
-            <div className="h-10 w-10 overflow-hidden rounded-full shadow-sm outline-neutral-800">
-              <div className="relative inline-block overflow-hidden rounded-lg border-neutral-800">
-                <img
-                  alt=""
-                  src={test3}
-                  width="50"
-                  height="50"
-                  decoding="async"
-                  data-nimg="1"
-                  className="inline-block"
-                  loading="lazy"
-                  style={{ color: "transparent" }}
-                />
+              <div className="author-details">
+                <p className="author-name">Natalie Hernandez</p>
+                <p className="author-role">CEO @Stockey</p>
               </div>
-            </div>
-            <div>
-              <p className="leading-none tracking-wide text-gray-400">
-                Natalie Hernandez{" "}
-              </p>
-              <p className="text-xs leading-none tracking-wide text-gray-300">
-                CEO @Stockey{" "}
-              </p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-between rounded-md bg-white p-8 shadow-lg max-w-sm mx-auto mb-16 mt-16 ">
-          <img src={star} width="100" height="100" />
-
-          {/* Testimonial */}
-          <p className="my-4 mb-0 text-lg font-normal italic  leading-relaxed tracking-wide text-gray-400">
-            Storetasker delivered on time, within budget and went above and
-            beyond to make my app a success...
-          </p>
-
-          {/* Author */}
-          <div className="mt-6 flex items-center gap-6">
-            <div className="h-10 w-10 overflow-hidden rounded-full shadow-sm outline-neutral-800">
-              <div className="relative inline-block overflow-hidden rounded-lg border-neutral-800">
-                <img
-                  alt=""
-                  src={test2}
-                  width="50"
-                  height="50"
-                  decoding="async"
-                  data-nimg="1"
-                  className="inline-block"
-                  loading="lazy"
-                  style={{ color: "transparent" }}
-                />
+        <div className="testimonial-column">
+          <div className="testimonial-card right">
+            <img src={star} width="100" height="100" alt="Rating Star" />
+            <p className="testimonial-text">
+              Storetasker delivered on time, within budget and went above and
+              beyond to make my app a success...
+            </p>
+            <div className="author-info">
+              <div className="author-avatar">
+                <img src={test1} width="50" height="50" alt="Author Avatar" />
+              </div>
+              <div className="author-details">
+                <p className="author-name">Natalie Hernandez</p>
+                <p className="author-role">CEO @Stockey</p>
               </div>
             </div>
-            <div>
-              <p className="leading-none tracking-wide text-gray-400">
-                Natalie Hernandez
-              </p>
-              <p className="text-xs leading-none tracking-wide text-gray-300">
-                CEO @Stockey
-              </p>
+          </div>
+          <div className="testimonial-card right">
+            <img src={star} width="100" height="100" alt="Rating Star" />
+            <p className="testimonial-text">
+              Storetasker delivered on time, within budget and went above and
+              beyond to make my app a success...
+            </p>
+            <div className="author-info">
+              <div className="author-avatar">
+                <img src={test2} width="50" height="50" alt="Author Avatar" />
+              </div>
+              <div className="author-details">
+                <p className="author-name">Natalie Hernandez</p>
+                <p className="author-role">CEO @Stockey</p>
+              </div>
             </div>
           </div>
         </div>
