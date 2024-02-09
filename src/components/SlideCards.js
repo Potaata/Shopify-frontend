@@ -56,8 +56,8 @@ const Button = ({ children, isActive }) => {
 
 const SlideCards = () => {
   return (
-    <div className="h-full bg-white" id="portfolio">
-      <div className=" flex items-center justify-center py-4 md:py-8 flex-wrap">
+    <div className="article-container" id="portfolio">
+      <div className="article-flex">
         <Button>EMAIL</Button>
         <Button>SOCIAL MEDIA</Button>
         <Button>ADVERTISING</Button>
@@ -67,189 +67,96 @@ const SlideCards = () => {
         <Button> GROWTH</Button>
         <Button> SEO</Button>
       </div>
-      <div className="container mx-auto lg:px-20">
-        <div className="grid grid-cols-3 h-full pb-40">
-          <div className="container flex justify-center">
-            <div className="max-w-sm py-16">
-              <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                <img className="rounded-t-xs" src={card1} alt="" />
-                <div className="py-6 px-8 rounded-lg bg-white">
-                  <div className="flex items-center">
-                    <p className="text-gray-700 font-semibold text-sm mb-3 mr-4 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      EMAIL MARKETING
-                    </p>
-                    <p className="text-gray-700 font-semibold text-sm mb-3 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      4 Days
-                    </p>
-                  </div>
-                  <p className="text-gray-400 text-xl tracking-wide sm:text-base md:text-xl">
-                    Mailchimp Integration
-                  </p>
-                  <div className="flex flex-col sm:flex-row">
-                    <span className="text-lg font-bold mb-4 sm:mr-4 sm:text-sm md:text-lg">
-                      $325.00
-                    </span>
-                    <img
-                      src={star}
-                      className="h-4 sm:h-3 md:h-4"
-                      alt="Star Icon"
-                    />
-                  </div>
-                </div>
+      <div className="custom-grid">
+        <div class="custom-column">
+          <div className="custom-card">
+            <img className="custom-img" src={card1} alt="" />
+            <div className="custom-content">
+              <div className="flex-container">
+                <p className="custom-description">EMAIL MARKETING</p>
+                <p className="custom-subtitle">4 Days</p>
+              </div>
+              <p className="custom-title">Mailchimp Integration</p>
+              <div className="custom-info">
+                <span className="custom-price">$325.00</span>
+                <img className="custom-star" src={star} alt="Star Icon" />
               </div>
             </div>
           </div>
-          <div className="container flex justify-center mt-16">
-            <div className="max-w-sm py-16">
-              <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                <img className="rounded-t-xs" src={card2} alt="" />
-                <div className="py-6 px-8 rounded-lg bg-white">
-                  <div className="flex items-center">
-                    <p className="text-gray-700 font-semibold text-sm mb-3 mr-4 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      EMAIL MARKETING
-                    </p>
-                    <p className="text-gray-700 font-semibold text-sm mb-3 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      4 Days
-                    </p>
-                  </div>
-                  <p className="text-gray-400 text-xl tracking-wide sm:text-base md:text-xl">
-                    Xmarine development sub-hire
-                  </p>
-                  <div className="flex flex-col sm:flex-row">
-                    <span className="text-lg font-bold mb-4 sm:mr-4 sm:text-sm md:text-lg">
-                      $325.00
-                    </span>
-                    <img
-                      src={star}
-                      className="h-4 sm:h-3 md:h-4"
-                      alt="Star Icon"
-                    />
-                  </div>
-                </div>
+          <div className="custom-card ">
+            <img className="custom-img" src={card4} alt="" />
+            <div className="custom-content">
+              <div className="flex-container">
+                <p className="custom-description">EMAIL MARKETING</p>
+                <p className="custom-subtitle">4 Days</p>
+              </div>
+              <p className="custom-title">Mailchimp Integration</p>
+              <div className="custom-info">
+                <span className="custom-price">$325.00</span>
+                <img className="custom-star" src={star} alt="Star Icon" />
               </div>
             </div>
           </div>
-          <div className="container flex justify-center">
-            <div className="max-w-sm py-16">
-              <p className="lg:text-6xl sm:text-2xl md:text-3xl">
-                Last 40, by Shopify
-              </p>
-              <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                <img className="rounded-t-xs" src={card3} alt="" />
-                <div className="py-6 px-8 rounded-lg bg-white">
-                  <div className="flex items-center">
-                    <p className="text-gray-700 font-semibold text-sm mb-3 mr-4 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      EMAIL MARKETING
-                    </p>
-                    <p className="text-gray-700 font-semibold text-sm mb-3 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      4 Days
-                    </p>
-                  </div>
-                  <p className="text-gray-400 text-xl tracking-wide sm:text-base md:text-xl">
-                    Mailchimp Integration
-                  </p>
-                  <div className="flex flex-col sm:flex-row">
-                    <span className="text-lg font-bold mb-4 sm:mr-4 sm:text-sm md:text-lg">
-                      $325.00
-                    </span>
-                    <img
-                      src={star}
-                      className="h-4 sm:h-3 md:h-4"
-                      alt="Star Icon"
-                    />
-                  </div>
-                </div>
+        </div>
+        <div class="custom-column column-2">
+          <div className="custom-card ">
+            <img className="custom-img" src={card2} alt="" />
+            <div className="custom-content">
+              <div className="flex-container">
+                <p className="custom-description">EMAIL MARKETING</p>
+                <p className="custom-subtitle">4 Days</p>
+              </div>
+              <p className="custom-title">Xmarine development sub-hire</p>
+              <div className="custom-info">
+                <span className="custom-price">$325.00</span>
+                <img className="custom-star" src={star} alt="Star Icon" />
+              </div>
+            </div>
+          </div>
+          <div className="custom-card card-4">
+            <img className="custom-img" src={card5} alt="" />
+            <div className="custom-content">
+              <div className="flex-container">
+                <p className="custom-description">EMAIL MARKETING</p>
+                <p className="custom-subtitle">4 Days</p>
+              </div>
+              <p className="custom-title">Mailchimp Integration</p>
+              <div className="custom-info">
+                <span className="custom-price">$325.00</span>
+                <img className="custom-star" src={star} alt="Star Icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-column ">
+          <div className="custom-card">
+            <p className="card-title">Last 40,</p>
+            <p className="card-title">by Shopify</p>
+            <img className="custom-img" src={card3} alt="" />
+            <div className="custom-content">
+              <div className="flex-container">
+                <p className="custom-description">EMAIL MARKETING</p>
+                <p className="custom-subtitle">4 Days</p>
+              </div>
+              <p className="custom-title">Mailchimp Integration</p>
+              <div className="custom-info">
+                <span className="custom-price">$325.00</span>
+                <img className="custom-star" src={star} alt="Star Icon" />
               </div>
             </div>
           </div>
 
-          <div className="container flex justify-center">
-            <div className="max-w-sm">
-              <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                <img className="rounded-t-xs" src={card4} alt="" />
-                <div className="py-6 px-8 rounded-lg bg-white">
-                  <div className="flex items-center">
-                    <p className="text-gray-700 font-semibold text-sm mb-3 mr-4 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      EMAIL MARKETING
-                    </p>
-                    <p className="text-gray-700 font-semibold text-sm mb-3 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      4 Days
-                    </p>
-                  </div>
-                  <p className="text-gray-400 text-xl tracking-wide sm:text-base md:text-xl">
-                    Mailchimp Integration
-                  </p>
-                  <div className="flex flex-col sm:flex-row">
-                    <span className="text-lg font-bold mb-4 sm:mr-4 sm:text-sm md:text-lg">
-                      $325.00
-                    </span>
-                    <img
-                      src={star}
-                      className="h-4 sm:h-3 md:h-4"
-                      alt="Star Icon"
-                    />
-                  </div>
-                </div>
+          <div className="custom-card">
+            <img className="custom-img" src={card6} alt="" />
+            <div className="custom-content">
+              <div className="flex-container">
+                <p className="custom-description">EMAIL MARKETING</p>
+                <p className="custom-subtitle">4 Days</p>
               </div>
-            </div>
-          </div>
-          <div className="container flex justify-center mt-16">
-            <div className="max-w-sm ">
-              <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                <img className="rounded-t-xs" src={card5} alt="" />
-                <div className="py-6 px-8 rounded-lg bg-white">
-                  <div className="flex items-center">
-                    <p className="text-gray-700 font-semibold text-sm mb-3 mr-4 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      EMAIL MARKETING
-                    </p>
-                    <p className="text-gray-700 font-semibold text-sm mb-3 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      4 Days
-                    </p>
-                  </div>
-                  <p className="text-gray-400 text-xl tracking-wide sm:text-base md:text-xl">
-                    Mailchimp Integration
-                  </p>
-                  <div className="flex flex-col sm:flex-row">
-                    <span className="text-lg font-bold mb-4 sm:mr-4 sm:text-sm md:text-lg">
-                      $325.00
-                    </span>
-                    <img
-                      src={star}
-                      className="h-4 sm:h-3 md:h-4"
-                      alt="Star Icon"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="container flex justify-center mt-32">
-            <div className="max-w-sm ">
-              <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                <img className="rounded-t-xs" src={card6} alt="" />
-                <div className="py-6 px-8 rounded-lg bg-white">
-                  <div className="flex items-center">
-                    <p className="text-gray-700 font-semibold text-sm mb-3 mr-4 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      EMAIL MARKETING
-                    </p>
-                    <p className="text-gray-700 font-semibold text-sm mb-3 hover:text-gray-900 hover:cursor-pointer sm:text-xs md:text-sm">
-                      4 Days
-                    </p>
-                  </div>
-                  <p className="text-gray-400 text-xl tracking-wide sm:text-base md:text-xl">
-                    Mailchimp Integration
-                  </p>
-                  <div className="flex flex-col sm:flex-row">
-                    <span className="text-lg font-bold mb-4 sm:mr-4 sm:text-sm md:text-lg">
-                      $325.00
-                    </span>
-                    <img
-                      src={star}
-                      className="h-4 sm:h-3 md:h-4"
-                      alt="Star Icon"
-                    />
-                  </div>
-                </div>
+              <p className="custom-title">Mailchimp Integration</p>
+              <div className="custom-info">
+                <span className="custom-price">$325.00</span>
+                <img className="custom-star" src={star} alt="Star Icon" />
               </div>
             </div>
           </div>
