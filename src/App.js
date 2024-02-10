@@ -6,7 +6,6 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 
 import Slider from "./components/Slider";
-import NavBar2 from "./components/Navbar2.js";
 import Breadcrumb from "./components/Breadcrumb.js";
 import Footer from "./components/Footer.js";
 import SlideCards from "./components/SlideCards.js";
@@ -18,14 +17,11 @@ import StoretaskerExpert from "./components/StoretaskerExpert.js";
 import Testimonial from "./components/Testimonial.js";
 import Overlap2 from "./components/Overlap2.js";
 import NavBar from "./components/Navbar.js";
-import IconPage from "./IconPage.js";
-import IconPageGlobal from "./components/IconPageGlobal.js";
 
 function App() {
   return (
     <>
       {/*Return all the webpage components*/}
-      {/* <NavBar2 /> */}
       <NavBar />
       <Banner />
       <Slider />

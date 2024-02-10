@@ -2,6 +2,7 @@ import React from "react";
 import icon1 from "../images/icon1.png";
 import icon2 from "../images/icon2.png";
 import icon3 from "../images/icon3.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Storetasker = () => {
   return (
@@ -43,8 +44,8 @@ const Storetasker = () => {
           <div class="feature">
             <div class="icon">
               <img src={icon3} />
-            </div>            <div class="number">3</div>
-
+            </div>
+            <div class="number">3</div>
             <div class="feature-content">
               <h2 class="feature-title">Fast Turnaround</h2>
               <p class="feature-description">
@@ -54,9 +55,13 @@ const Storetasker = () => {
             </div>
           </div>
         </div>
-        <div class="call-to-action">
+        <div className="call-to-action ">
           <a href="/" class="cta-button">
             Get a Free Estimate
+            <FontAwesomeIcon
+              icon="fa-solid fa-arrow-right"
+              className="arrow-icon"
+            />
           </a>
         </div>
       </div>

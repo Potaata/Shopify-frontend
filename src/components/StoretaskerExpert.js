@@ -17,7 +17,7 @@ const StoretaskerExpert = () => {
     </div>
 
     {/* <!-- Storetasker component --> */}
-    <div class="storetasker relative z-0">
+    <div class="storetasker">
         {/* <!-- Storetasker component content --> */}
         <Storetasker />
     </div>

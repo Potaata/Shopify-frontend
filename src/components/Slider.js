@@ -33,70 +33,42 @@ const Slider = () => {
     <div className="homepage-slider">
       <div className={`single-homepage-slider ${slides[currentSlide].bgClass}`}>
         <div className="mt-96 flex justify-center">
-          <div className="d:w-2/3 lg:w-2/3 xl:w-2/3">
-            <div>
+          <div className="container">
+            <div className="image-wrapper">
               <img
                 src={slides[currentSlide].mainImage}
                 alt="Main Hero Image"
-                className="mx-auto"
-                style={{ width: "400px", height: "90px" }} // Adjust the width and height here
+                className="main-image"
+                style={{ width: "400px", height: "100px" }} // Adjust the width and height here
               />
               <img
                 src={slides[currentSlide].secondImage}
                 alt="Main Hero Image"
-                className="pt-36"
-                style={{
-                  width: "500px",
-                  height: "300px",
-                  position: "relative",
-                  zIndex: "1",
-                }} // Adjust the width, height, and other styles here
+                className="second-image"
               />
-              {/* Text in behind the image */}
-
-              <div
-                className="absolute inset-0 pt-[46rem] flex justify-center items-center text-white"
-                style={{ zIndex: "0" }}
-              >
-                <div className="text-center">
-                  <h2 className="text-9xl font-bold tracking-widest pr-[18rem]">
-                    L
-                  </h2>
+                <div
+                  className="letter-center"
+                  style={{ position: "relative", zIndex: "1" }}
+                >
+                  <h2 className="letter-a">A</h2>
                 </div>
-              </div>
-            </div>
-            {/* Text in front of the image */}
-            <div
-              className="absolute inset-0 pt-[48rem] flex justify-center items-center text-white"
-              style={{ zIndex: "2" }}
-            >
-              <div className="text-center">
-                <h2 className="text-9xl font-bold tracking-widest pr-[8rem]">
-                  A
-                </h2>
-              </div>
-            </div>
-            <div
-              // Text in behind the image
-
-              className="absolute inset-0 pt-[46rem] flex justify-center items-center text-white"
-              style={{ zIndex: "0" }}
-            >
-              <div className="text-center">
-                <h2 className="text-9xl font-bold tracking-widest pl-[2rem]">
-                  S
-                </h2>
-              </div>
-            </div>
-            {/* Text in front of the image */}
-            <div
-              className="absolute inset-0 pt-[46rem] flex justify-center items-center text-white"
-              style={{ zIndex: "0" }}
-            >
-              <div className="text-center">
-                <h2 className="text-9xl font-bold tracking-widest pl-[14rem]">
-                  T
-                </h2>
+                <div
+                  className="letter-center"
+                  style={{ position: "absolute", zIndex: "1" }}
+                >
+                  <h2 className="letter-l">L</h2>
+                </div>
+                <div
+                  className="letter-center"
+                  style={{ position: "absolute", zIndex: "0" }}
+                >
+                  <h2 className="letter-s">S</h2>
+                </div>
+                <div
+                  className="letter-center"
+                  style={{ position: "absolute", zIndex: "2" }}
+                >
+                  <h2 className="letter-t">T</h2>
               </div>
             </div>
           </div>
