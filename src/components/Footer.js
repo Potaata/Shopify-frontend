@@ -1,13 +1,13 @@
 import React from "react";
 
 //importing images from src/images
-import footer1 from "../images/footer1.png";
-import footer2 from "../images/footer2.png";
-import visa from "../images/visa.png";
-import visa2 from "../images/visa2.png";
-import paypal from "../images/paypal.png";
-import star from "../images/5star.png";
-import shopify from "../images/shopifyfooter.png";
+import footer1 from "../images/footer1.webp";
+import footer2 from "../images/footer2.webp";
+import visa from "../images/visa.webp";
+import visa2 from "../images/visa2.webp";
+import paypal from "../images/paypal.webp";
+import star from "../images/5star.webp";
+import shopify from "../images/shopifyfooter.webp";
 
 function Footer() {
   return (
@@ -18,7 +18,6 @@ function Footer() {
           <div className="row">
             <div className="col-xl-4 col-md-4 mb-30">
               <div className="single-cta">
-                <i className="fas fa-map-marker-alt"></i>
                 <div className="cta-text">
                   <h4>A better way to hire </h4>
                   <h4>Shopify Help</h4>

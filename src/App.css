@@ -282,120 +282,9 @@ body {
   height: 200px;
   position: absolute;
   padding-top: 30px;
-  z-index: 0;
+  z-index: 1;
 }
 
-.text-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.letter-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.letter-l {
-  font-size: 13rem;
-  font-weight: bold;
-  letter-spacing: 2.15em;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 40rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.letter-a {
-  font-size: 13rem;
-  font-weight: bold;
-  letter-spacing: 0.75em;
-  padding-right: 30rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 80rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.letter-s {
-  font-size: 13rem;
-  font-weight: bold;
-  letter-spacing: 0.75em; /* Equivalent to tracking-widest */
-  padding-left: 12rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 40rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.letter-t {
-  font-size: 13rem;
-  font-weight: bold;
-  letter-spacing: 1.5em;
-  padding-left: 25rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 40rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .letter-l {
-    display: none;
-  }
-  .letter-a {
-    display: none;
-  }
-  .letter-s {
-    display: none;
-  }
-
-  .letter-t {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .letter-l {
-    display: none;
-  }
-  .letter-a {
-    display: none;
-  }
-  .letter-s {
-    display: none;
-  }
-
-  .letter-t {
-    display: none;
-  }
-}
 .slider-navigation {
   position: absolute;
   top: 50%;
@@ -413,24 +302,7 @@ body {
   border-radius: 0.5rem;
 }
 
-.letters-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none;
-  z-index: 2;
-}
 
-.letter {
-  font-size: 5rem;
-  color: white;
-  font-weight: bold;
-  z-index: 3;
-}
 .prev-button,
 .next-button {
   background-color: transparent;
@@ -495,7 +367,7 @@ body {
   content: "";
   width: 255px;
   height: 217px;
-  background-image: url("./images/bluedot.png");
+  background-image: url("./images/bluedot.webp");
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-transform: translate(-40%, -40%);
@@ -534,7 +406,7 @@ body {
   content: "";
   width: 255px;
   height: 217px;
-  background-image: url("./images/dot.png");
+  background-image: url("./images/dot.webp");
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-transform: translate(40%, -40%);
@@ -561,7 +433,7 @@ body {
   content: "";
   width: 255px;
   height: 217px;
-  background-image: url("./images/purpledot.png");
+  background-image: url("./images/purpledot.webp");
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-transform: translate(-40%, 40%);
@@ -672,7 +544,7 @@ body {
 
 .grid-button {
   color: #fff;
-  background-color: #3182ce;
+  background-color: #10b4e4;
   border-radius: 9999px;
   font-size: 0.875rem;
   padding: 10px 25px;
@@ -853,16 +725,33 @@ body {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
+.grid-4-icon {
+  color: #fff;
+}
+
 .full-width {
   width: 100%;
 }
 
 @media (min-width: 640px) {
-  .full-width {
-    width: auto;
+  .grid-4 {
+    height: 3rem;
+    width: 2em;
   }
 }
 
+@media (min-width: 480px) {
+  .grid-4 {
+    height: 3rem;
+    width: 2em;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-text {
+    font-size: 1rem;
+  }
+}
 .we-help-section .woo-card {
   position: absolute;
   bottom: -8rem;
@@ -1029,7 +918,7 @@ body {
   content: "";
   width: 255px;
   height: 217px;
-  background-image: url("./images/dot.png");
+  background-image: url("./images/dot.webp");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translate(100%, -100%);
@@ -1044,7 +933,7 @@ body {
   content: "";
   width: 255px;
   height: 217px;
-  background-image: url("./images/bluedot.png");
+  background-image: url("./images/bluedot.webp");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translate(-100%, -100%);
@@ -1218,14 +1107,14 @@ body {
 
 .white-button {
   background-color: #fff;
-  color: #1e90ff;
+  color: #10b4e4;
   border: 1px solid #fff;
   margin-right: 1rem;
   margin-left: 4rem;
 }
 
 .white-button:hover {
-  background-color: #1e90ff;
+  background-color: #10b4e4;
   color: #fff;
 }
 
@@ -1660,7 +1549,7 @@ input[type="radio"] {
   display: inline-block;
   font-size: 12em;
   font-weight: 600;
-  color: #666666;
+  color: #44699d;
   margin: 0;
   padding-left: 6rem;
   opacity: 0.4;
@@ -1765,7 +1654,7 @@ input[type="radio"] {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  max-width: 250px;
+  max-width: 280px;
   background-color: #fff;
   padding: 12px 22px;
   color: rgb(28, 156, 235);
@@ -1820,7 +1709,7 @@ input[type="radio"] {
 @media (max-width: 768px) {
   .flex-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
   .expert-container {
     position: relative; /* Change position to relative */

@@ -1,5 +1,5 @@
 import React from "react";
-import expertimg from "../images/expert.png";
+import expertimg from "../images/expert.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Expert = () => {

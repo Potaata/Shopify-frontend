@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../images/logo.png"; // Assuming the logo is in the src/images folder
+import logo from "../images/logo.webp"; // Assuming the logo is in the src/images folder
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {

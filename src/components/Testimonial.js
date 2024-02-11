@@ -1,10 +1,10 @@
 import React from "react";
 
 //importing images from src/images
-import star from "../images/5star.png";
-import test1 from "../images/test1.png";
-import test2 from "../images/test2.png";
-import test3 from "../images/test3.png";
+import star from "../images/5star.webp";
+import test1 from "../images/test1.webp";
+import test2 from "../images/test2.webp";
+import test3 from "../images/test3.webp";
 
 const Testimonial = () => {
   return (

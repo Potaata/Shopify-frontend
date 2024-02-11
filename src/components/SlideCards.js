@@ -1,7 +1,7 @@
 import React from "react";
 
 //importing images from src/images
-import star from "../images/5star.png";
+import star from "../images/5star.webp";
 import card1 from "../images/card1.webp";
 import card2 from "../images/card2.webp";
 import card3 from "../images/card3.webp";
